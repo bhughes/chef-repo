@@ -25,3 +25,7 @@ end
 service "apache2" do
 	action [:enable, :start]
 end
+
+include_recipe "chef-client"
+include_recipe "apt"
+include_recipe "ntp"
